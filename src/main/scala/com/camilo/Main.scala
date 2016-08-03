@@ -10,7 +10,7 @@ object Main {
   def main(args: Array[String]): Unit = {
     if (args.length != 2) {
       println("Illegal number of parameters, please enter two numbers n and k")
-      println("Usage example: Main 10 2")
+      println("Usage: Main <numberOfPeople> <stepRate>")
     } else {
       Try((args(0).toInt, args(1).toInt)) match {
         case Success((n, k)) =>
