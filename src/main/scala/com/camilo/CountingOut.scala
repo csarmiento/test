@@ -14,8 +14,8 @@ object CountingOut {
    * @return the safe position to be, to win (or not be killed)
    */
   def getSafePosition(n: Int, k: Int): Int = {
-    assert(n > 0)
-    assert(k > 0)
+    assert(n > 0, "n should be > 0")
+    assert(k > 0, "k should be > 0")
     k match {
       case 2 =>
         val valueOfL = n - java.lang.Integer.highestOneBit(n)
